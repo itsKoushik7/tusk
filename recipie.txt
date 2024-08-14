@@ -1,8 +1,14 @@
 recepies  
 
+- Burger 
+- manchuria
 - pizza 
 - rice 
 - biryani
+
+Drinks 
+-Sprite
+-coke
 
 Sweets 
 -ladoo
