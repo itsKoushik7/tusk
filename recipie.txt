@@ -1,5 +1,7 @@
 recepies  
 
+- Burger 
+- manchuria
 - pizza 
 - rice 
 - biryani
