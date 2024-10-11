@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 
-const MyTheme = createTheme({
+const Theme = createTheme({
     typography : {
         fontFamily: 'Montserrat',
         body2 :{
@@ -13,4 +13,4 @@ const MyTheme = createTheme({
     }
 })
 
-export default MyTheme;
+export default Theme;

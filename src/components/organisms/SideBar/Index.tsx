@@ -1,17 +1,21 @@
 import React from "react";
 import IconText from "../../molecules/IconText/Index";
-import Constants from '../../../utils/constants/Index';
-import Data from '../../../utils/constants/SecondData';
+import { MENU_ITEMS_1, MENU_ITEMS_2 } from "../../../utils/constants/Index";
 import { useState } from "react";
 import { Divider, Stack, styled, ThemeProvider } from "@mui/material";
-import Theme from "../../../themes/MyTheme";
-
+import Theme from "../../../themes/Index";
 
 const StyledStack = styled(Stack)({
+paddingTop : '20px',
   width: '270px',
   display:'flex',
   flexDirection: 'column',
+  gap:'16px',
 })
+const StyledDivider = styled(Divider) ({
+  width : '200px',
+})
+
 
 const SideBar : React.FC   = () => {
 
@@ -19,14 +23,11 @@ const SideBar : React.FC   = () => {
     const handleItemClick = (id: number) => {
       setActiveIndex(id); 
     };
-    const StyledDivider = styled(Divider) ({
-      width : '200px',
-    })
-    
+
     return (
         <ThemeProvider theme={Theme}>
             <StyledStack>
-                  {Constants.map((menuItem,index) => (
+                  {MENU_ITEMS_1.map((menuItem,index) => (
               <IconText      
                 iconPath={menuItem.icon}  
                 label={menuItem.label}
@@ -37,7 +38,7 @@ const SideBar : React.FC   = () => {
             </StyledStack>
             <StyledStack>
             <StyledDivider variant="middle"></StyledDivider>
-            {Data.map((menuItem,index) => (
+            {MENU_ITEMS_2.map((menuItem,index) => (
                <IconText      
                iconPath={menuItem.icon}  
                label={menuItem.label}
